@@ -1,0 +1,248 @@
+*, ::before, ::after
+{
+    box-sizing: border-box;
+}
+
+:root
+{
+    --desaturated-red: hsl(0, 36%, 70%);
+    --soft-red: hsl(0, 93%, 68%);
+    --dark-grayish-red: hsl(0, 6%, 24%);
+}
+
+body
+{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.container
+{
+    max-width: 375px;
+    margin: 0 auto;
+}
+
+.logo-container
+{
+    background-color: white;
+    margin: 1.5rem auto 1.5rem 1.5rem;
+}
+
+.logo
+{
+    display: block;
+    max-width: 5rem;
+    max-height: 5rem;
+    margin: 5rem, 5rem, 3rem, 1rem;
+}
+
+.hero-desktop
+{
+    display: none;
+}
+
+.article
+{
+   text-align:  center;
+   padding: 2rem .6rem;
+}
+
+.title
+{
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .8rem;
+}
+
+.title span
+{
+   font-weight: 300;
+   color: var(--desaturated-red);
+}
+
+.main-text
+{
+   color: var(--desaturated-red);
+}
+
+input[type="email"]
+{
+   width: 22rem;
+   margin: 2rem 1rem 4rem 0rem;
+   padding: .8rem;
+   color: black;
+   border: 2px solid var(--desaturated-red);
+   border-radius: 5rem;
+}
+
+input[type="email"]:focus
+{
+    border: 1px solid var(--soft-red);
+}
+
+.arrow-button
+{
+    display: block;
+    width: 4rem;
+    height: 2rem;
+    background-image: linear-gradient(to right, var(--desaturated-red), var(--soft-red));
+    transition: background-color 0.3s ease-in-out;
+    padding: 1.4rem 2rem;
+    border-radius: 100px;
+    position: relative;
+    bottom: 6.8rem;
+    left: 18rem;
+    box-shadow: 0px 4px 15px var(--desaturated-red);
+}
+
+.arrow-button img
+{
+    margin: -.7rem -.8rem 1.5rem;
+}
+
+.arrow-button:hover
+{
+    cursor: pointer;
+    background-image: green;
+    box-shadow: 0px 4px 15px black;
+}
+
+.arrow-button:hover img
+{
+    filter: invert(1);
+}
+
+.error-icon
+{
+    display: none;
+    position: relative;
+    bottom: 9rem;
+    left: 5rem;
+}
+
+.result
+{
+    font-size: 12px;
+    font-weight: bold;
+    position: relative;
+    bottom: 8.5rem;
+    left: 2rem;
+}
+
+.result.error
+{
+    font-size: 12px;
+    position: relative;
+    bottom: 10.5rem;
+    left: 2rem;
+    color: var(--desaturated-red);
+}
+
+@media (min-width: 500px) 
+{
+    .body
+    {
+        overflow: hidden;
+    }
+
+    .grid-container
+    {
+       display: grid;
+       grid-template-columns: 1fr 1fr;
+       height: 100%;
+    }
+
+    .container
+   {
+    max-width: 1200px;
+     margin: 0rem; 
+   }  
+   
+
+   .hero-desktop
+   {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+   }
+
+   .logo-container
+   {
+    padding-left: 6rem;
+    margin: 2rem 0 0;
+   }
+
+   .logo
+   {
+    width: 90px;
+    height: 2rem;
+   }
+
+   .hero-mobile
+   {
+    display: none;
+   }
+
+   .article
+    {
+     text-align: left;
+     padding: 5rem 15rem 1rem 0rem;
+     max-width: 600px;
+     margin: 1rem 6rem;
+    }
+
+   .title
+   {
+    font-size: 3rem;
+    margin: 0rem 0 1rem;
+   }
+
+    .main-text
+    {
+        font-size: .8rem;
+        padding: -5rem;
+        margin: 0;
+        line-height: 1.5rem;
+    }
+    
+    input[type="email"]
+    {
+        margin: 1.5rem 5rem 5rem 0rem;
+        width: 22rem;
+    }
+
+    .arrow-button
+    {
+       bottom: 7.8rem;
+    }
+
+    .arrow-button img
+    {
+        padding-left: .5rem;
+    }
+
+    .error-icon
+    {
+        left: 15rem;
+        bottom: 10rem;
+    }
+
+    .result
+    {
+        left: 7rem;
+        bottom: 9.5rem;
+    }
+
+    .result.error
+    {
+        left: 7rem;
+        bottom: 11.5rem;
+    }
+
+
+}
