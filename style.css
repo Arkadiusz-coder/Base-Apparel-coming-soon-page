@@ -172,16 +172,16 @@ input[type="email"]:focus
    }
 
    .logo-container
-   {
-    padding-left: 6rem;
-    margin: 2rem 0 0;
-   }
+{
+    margin-left: 6rem;
+}
 
-   .logo
-   {
-    width: 90px;
-    height: 2rem;
-   }
+.logo
+{
+    max-width: 8rem;
+    max-height: 8rem;
+    margin: 5rem, 5rem, 3rem, 1rem;
+}
 
    .hero-mobile
    {
@@ -240,9 +240,8 @@ input[type="email"]:focus
 
     .result.error
     {
-        left: 7rem;
-        bottom: 11.5rem;
+        left: 0;
+        bottom: 0;
     }
-
 
 }
