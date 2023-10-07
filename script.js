@@ -4,8 +4,6 @@ const arrowButton = document.querySelector(".arrow-button");
 
 function validateEmail() {
   const email = emailInput.value;
-  
-  // Reset button color to its original state
   arrowButton.style.backgroundImage = "linear-gradient(to right, var(--desaturated-red), var(--soft-red))";
 
   if (email.match(/^\w+@[a-zA-Z\d.-]+\.[a-zA-Z]{2,}$/)) {
@@ -29,6 +27,3 @@ arrowButton.addEventListener("click", function() {
   arrowButton.classList.toggle("clicked");
   validateEmail(); // Check email validity when the button is clicked
 });
-
-// Initial button background
-arrowButton.style.backgroundImage = "linear-gradient(to right, var(--desaturated-red), var(--soft-red))";
