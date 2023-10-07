@@ -25,6 +25,11 @@ body
     margin: 0 auto;
 }
 
+.bg_pattern
+{
+    display: none;
+}
+
 .logo-container
 {
     background-color: white;
@@ -89,7 +94,7 @@ input[type="email"]:focus
     display: block;
     width: 4rem;
     height: 2rem;
-    background-image: linear-gradient(to right, var(--desaturated-red), var(--soft-red));
+    background-image: linear-gradient(to right, var(--soft-red), var(--desaturated-red));
     transition: background-color 0.3s ease-in-out;
     padding: 1.4rem 2rem;
     border-radius: 100px;
@@ -107,14 +112,8 @@ input[type="email"]:focus
 .arrow-button:hover
 {
     cursor: pointer;
-    background-image: green;
-    box-shadow: 0px 4px 15px black;
-}
-
-.arrow-button:hover img
-{
-    filter: invert(1);
-}
+    background-image: pink;
+} 
 
 .error-icon
 {
@@ -133,15 +132,6 @@ input[type="email"]:focus
     left: 2rem;
 }
 
-.result.error
-{
-    font-size: 12px;
-    position: relative;
-    bottom: 10.5rem;
-    left: 2rem;
-    color: var(--desaturated-red);
-}
-
 @media (min-width: 500px) 
 {
     .body
@@ -158,10 +148,12 @@ input[type="email"]:focus
 
     .container
    {
-    max-width: 1200px;
-     margin: 0rem; 
-   }  
-   
+        max-width: 1200px;
+        margin: 0rem; 
+        background-image: url('images/bg-pattern-desktop.svg');
+        background-size: cover;
+        background-position: center
+   }
 
    .hero-desktop
    {
@@ -237,11 +229,4 @@ input[type="email"]:focus
         left: 7rem;
         bottom: 9.5rem;
     }
-
-    .result.error
-    {
-        left: 0;
-        bottom: 0;
-    }
-
 }
