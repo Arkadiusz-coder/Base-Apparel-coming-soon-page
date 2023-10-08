@@ -34,7 +34,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: (https://arkadiusz-coder.github.io/Base-Apparel-coming-soon-page/)
 
 ## My process
 
@@ -47,20 +47,28 @@ Users should be able to:
 
 ### What I learned
 
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
+1. How to make backgrund picture: 
 ```css
-.proud-of-this-css {
-  color: papayawhip;
-}
+.container
+   {
+       (....)
+        background-image: url('images/bg-pattern-desktop.svg');
+        background-size: cover;
+        background-position: center
+   }
 ```
+2. Email value schould be dclared within function that reacts to that value, so it will be empty with every refreshment of the page
 ```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
+function validateEmail() {
+  const email = emailInput.value;
+```
+3. How to make enter key to initiate function:
+```js
+emailInput.addEventListener("keyup", function(event) {
+  if (event.key === "Enter") {
+    validateEmail();
+  }
+});
 ```
 
 ### Continued development
