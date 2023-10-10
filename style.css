@@ -128,7 +128,7 @@ input[type="email"]:focus
     font-size: 12px;
     font-weight: bold;
     position: relative;
-    bottom: 8.5rem;
+    bottom: 10.5rem;
     left: 2rem;
 }
 
@@ -227,6 +227,6 @@ input[type="email"]:focus
     .result
     {
         left: 7rem;
-        bottom: 9.5rem;
+        bottom: 11.5rem;
     }
 }
